@@ -1,3 +1,5 @@
+$gren: #00ff00;
+
 @mixin container($justify: start){
     display: flex;
     align-items: center;
@@ -17,7 +19,7 @@
     justify-content: flex-start;
 }
 
-@mixin bottom-underline($color: #00ff00, $height: 3px, $duration: 0.3s, $position: 8px) {
+@mixin bottom-underline($color: $gren, $height: 3px, $duration: 0.3s, $position: 8px) {
     position: relative;
   
     &::after {

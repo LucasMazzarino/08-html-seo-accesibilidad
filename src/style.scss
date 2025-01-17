@@ -99,9 +99,9 @@
 
   &__title {
     font-family: 'Helvetica Neue', Helvetica, sans-serif;
-    font-size: 129px;
+    font-size: 120px;
     width: 1050px;
-    height: 245px;
+    height: 250px;
     font-weight: 600;
     margin-bottom: 10px;
     letter-spacing: -0.4rem;
@@ -109,10 +109,12 @@
     position: relative;
     bottom: -20px;
     padding-top: 30px;
+    width: 100%;
   }
 
   &__design {
     font-family: 'FHPhemister-Bold';
+    
   }
 
   &__image {
@@ -151,23 +153,25 @@
     }
 
     &--4 {
-      grid-column: 2 / 16;
-      grid-row: 7 / 13;
-      left: -22px;
+      grid-column: 1 / 16;
+      grid-row: 8 / 13;
+      left: -60px;
       z-index: 2;
+      bottom: 30px;
     }
 
     &--5 {
-      grid-column: 4 / 24;
+      grid-column: 2 / 24;
       grid-row: 9 / 13;
+      top: 30px;
     }
 
     &--6 {
-      grid-column: 9 / 22;
-      grid-row: 8 / 16;
-      height: 350px;
+      grid-column: 7 / 22;
+      grid-row: 9 / 16;
+      height: 320px;
       width: 280px;
-      top: 20px;
+      bottom: 20px;
       left: 9px;
     }
 
@@ -178,10 +182,9 @@
 
     &--8 {
       grid-column: 19 / 25;
-      grid-row: 7 / 12;
+      grid-row: 8 / 12;
       background-color: #efefef;
-      height: auto;
-      height: 220px;
+      height: 270px;
     }
   }
 }
@@ -236,7 +239,7 @@
       text-decoration: none;
       color: black;
       margin-left: 900px;
-      @include variables.bottom-underline(#00ff00, 3px, 0.3s, 24px);
+      @include variables.bottom-underline(variables.$gren, 3px, 0.3s, 24px);
       
     }
   }
@@ -389,7 +392,7 @@
   }
 
   &__ico {
-    @include variables.bottom-underline(#00ff00, 3px, 0.3s, 18px);
+    @include variables.bottom-underline(variables.$gren, 3px, 0.3s, 18px);
     font-size: 2rem;
     font-weight: 400;
     text-align: left;
